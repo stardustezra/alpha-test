@@ -1,0 +1,161 @@
+body {
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+  }
+
+.vertical-menu {
+    background-color: #272727;
+    color: white;
+    width: 100%;
+    position: sticky;
+    top: 0;
+    left: 0;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+}
+
+
+.vertical-menu ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+}
+
+.vertical-menu li {
+    margin-right: 20px;
+}
+
+.vertical-menu a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+}
+
+
+.vertical-menu a:hover {
+    text-decoration: underline;
+}
+
+.slideshow{
+    max-width: 100%;
+    overflow: hidden;
+    padding-bottom: 25%;
+    position: relative;
+  }
+  
+  .slideshow img {
+    display:none;
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%); /*Defines a translation, using only the value for the Y-axis*/
+    z-index: 0;
+  }
+
+.smith {
+    background-color: #2EB398;
+
+}
+
+.aboutcontent {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0% auto;
+    width: 100%; 
+    max-width: 960px;
+    padding: 5%;
+    
+}
+
+.about-section h2 {
+    margin-top: 0%;
+    color: #185f51;
+    
+}
+
+.about-section h1, p {
+    margin-bottom: 0%;
+    color: white;
+}
+
+.profilepic {
+    display: flex;
+    align-items: center;
+    width: 70%;
+}
+
+.profilepic img {
+    display: flex;
+    width: 100%;
+    height: auto;
+    margin-right: 10%;
+}
+
+
+/* Til form */
+.contactcontainer {
+    display: flex;
+    font-family: 'Open Sans', sans-serif;
+   
+    flex-direction: column;
+    color: white;
+    align-items: center;
+    margin: 0;
+  }
+  
+  .booking {
+    display: flex;
+    justify-content: center;
+  }
+  
+ /* .contactcontainer p {
+    margin: 20px;
+    max-width: 700px;
+    width: 100%;
+  
+  }*/
+  
+  .contactcontainer h2 {
+    font-size: 50px;
+    width: 100%;
+    text-align: center;
+  }
+  
+  
+  input[text=text] {
+    border: 0.5px solid grey;
+    background-color: rgb(207, 204, 204);
+    padding: 12px 10px;
+    display: flex;
+    /*width: 100%;
+    max-width: 700px;
+    align-items: center;*/
+    border-radius: 7px;
+    display: flex;
+    box-sizing: border-box;
+  }
+
+  textarea {
+    background-color:  rgb(207, 204, 204);
+  }
+  
+  input[type=submit] {
+    background-color: #2EB398;
+    color: white;
+    border: 1px solid #2EB398;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 15px;
+    margin: 20px;
+    width: 230px;
+    font-size: 20px;
+    display: flex;
+  }
+
+  .booking {
+    background-color: rgb(71, 71, 71);
+  }
