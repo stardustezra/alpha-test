@@ -7,15 +7,23 @@ body {
     background-color: #272727;
     color: white;
     width: 100%;
-    position: sticky;
-    top: 0;
-    left: 0;
     padding: 20px;
     box-sizing: border-box;
     display: flex;
     justify-content: center;
     align-items: center;
-    z-index: 2;
+    height: 90px;
+  }
+  
+  .logo {
+    width: 100px;
+    position: relative;
+}
+
+.logo img {
+  width: 100%;
+  position: absolute;
+  z-index: 1;
 }
 
 
@@ -98,50 +106,81 @@ body {
 
 
 /* Til form */
+
 .contactcontainer {
     display: flex;
+    flex: 1;
     font-family: 'Open Sans', sans-serif;
-   
     flex-direction: column;
     color: white;
     align-items: center;
     margin: 0;
+    margin-right: 32px;
+  }
+
+  footer .title {
+    color: white;
+
   }
   
   .booking {
     display: flex;
     justify-content: center;
-  }
-  
- /* .contactcontainer p {
-    margin: 20px;
-    max-width: 700px;
+    margin: 0 auto;
     width: 100%;
-  
-  }*/
-  
-  .contactcontainer h2 {
-    font-size: 50px;
-    width: 100%;
-    text-align: center;
   }
+
+  .content {
+    display: flex;
+    max-width: 960px;
+    width: 100%;
+    flex-direction: column;
+    margin: 0 auto;
+  }
+
+  .contact-text {
+    flex: 1;
+    max-width: 200px;
+  }
+
+  .contact-text p{
+    margin: 0;
+  }
+
+  .contactcontainer input[text=text] + input[text=text],
+  .contactcontainer input[text=text] + textarea {
+    margin-top: 10px;
+  }
+
   
   
   input[text=text] {
-    border: 0.5px solid grey;
+    border: 0;
     background-color: rgb(207, 204, 204);
     padding: 12px 10px;
-    display: flex;
-    /*width: 100%;
-    max-width: 700px;
-    align-items: center;*/
+    width: 100%;
     border-radius: 7px;
     display: flex;
     box-sizing: border-box;
   }
 
+  .button {
+    display: flex;
+    width: 100%;
+    justify-content: end;
+    margin-top: 10px;
+  }
+
   textarea {
     background-color:  rgb(207, 204, 204);
+    display: block;
+    width: 100%;
+    border: 0;
+    border-radius: 7px;
+    resize: none;
+    padding: 12px 10px;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
   }
   
   input[type=submit] {
@@ -150,13 +189,13 @@ body {
     border: 1px solid #2EB398;
     border-radius: 5px;
     cursor: pointer;
-    padding: 15px;
-    margin: 20px;
-    width: 230px;
-    font-size: 20px;
+    padding: 10px 20px;
     display: flex;
   }
 
-  .booking {
+
+
+  footer {
     background-color: rgb(71, 71, 71);
+    
   }
